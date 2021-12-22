@@ -1,0 +1,48 @@
+.season-name {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+/* ====== Table ====== */
+
+#tablearea {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+#table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+#table tr:nth-child(even) {
+    background-color: white;
+}
+
+#table tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+#table tr:first-child {
+    background-color: #FFFF00;
+}
+
+#table tr th {
+    cursor: pointer;
+}
+
+#table th, td {
+    text-align: left;
+    padding: 10px 5px;
+    overflow: hidden;
+    min-width: 20px;
+    max-width: 50px;
+}

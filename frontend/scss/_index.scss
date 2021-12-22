@@ -1,0 +1,47 @@
+.material-icons-outlined {
+    font-size: 30px;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: whitesmoke;
+}
+
+.top-bar-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 50px;
+    padding: 10px;
+    // border: 1px solid black;
+}
+
+
+
+
+
+.bottom-bar-container {
+    display: flex;
+    height: 8vh;
+    background-color: whitesmoke;
+}
+
+.bottom-bar-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    padding: 10px;
+    // border: 1px solid black;
+}
+
+.bottom-bar-container div:not(:last-child) {
+    border-right: 1px solid lightgray;
+}
+
+
+    

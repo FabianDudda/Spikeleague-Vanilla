@@ -1,0 +1,508 @@
+/* ====== Media Queries ====== */
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+/* ====== General ====== */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+/* ====== BUTTONS ====== */
+.btn-1,
+.btn-1 :visited,
+.btn-1 :hover,
+.btn-1 :active {
+  width: 100%;
+  margin: 5px 0 5px 0;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  background-color: #FAE10A;
+  font-weight: bold;
+}
+
+.btn-2,
+.btn-2 :visited,
+.btn-2 :hover,
+.btn-2 :active {
+  width: 100%;
+  margin: 5px 0 5px 0;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: #00bdbd;
+}
+
+/* ====== Forms ====== */
+.form-header {
+  padding: 0 10px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.text-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px auto 15px auto;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* ====== CONTAINER ====== */
+.user-info-container,
+.user-edit-container,
+.user-stats-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+.add-match-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+/* ====== CONTENT-CONTAINER ====== */
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 84vh;
+  height: auto;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.content-container-add-match {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 84vh;
+  height: auto;
+  background-color: whitesmoke;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* ====== DISPLAY USER INFORMATION ====== */
+.user-info-container span {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+/* ====== TOP AND BOTTOM MENU ====== */
+.material-icons-outlined {
+  font-size: 35px;
+}
+
+.top-bar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 8vh;
+  background-color: white;
+}
+
+.top-bar-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  min-width: 50px;
+  padding: 10px;
+}
+
+.bottom-bar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8vh;
+  background-color: white;
+}
+
+.bottom-bar-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 20%;
+  padding: 10px;
+}
+
+.bottom-bar-container div:not(:last-child) {
+  border-right: 1px solid #F1F1F1;
+}
+
+.top-bar-container div span a,
+.top-bar-container div span a :visited,
+.top-bar-container div span a :hover,
+.top-bar-container div span a :active,
+.bottom-bar-container div span a,
+.bottom-bar-container div span a :visited,
+.bottom-bar-container div span a :hover,
+.bottom-bar-container div span a :active {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.news-box {
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background-color: whitesmoke;
+}
+
+.login-box {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+/* ====== ADD MATCH ====== */
+.add-match {
+  width: 100%;
+}
+
+.add-match-row {
+  width: 100%;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add-match-team-1 {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: RGBA(0, 0, 128, 0.75);
+}
+
+.add-match-team-2 {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: RGBA(128, 0, 0, 0.75);
+}
+
+.add-match-team-1 b {
+  font-weight: bold;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 5px 0 5px 0;
+}
+
+.add-match-team-2 b {
+  font-weight: bold;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 5px 0 5px 0;
+}
+
+.add-match-vs {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.add-match-points-team-1,
+.add-match-points-team-2,
+.add-match-select-player-team-1,
+.add-match-select-player-team-2 {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border: none;
+  background: white;
+  text-align: center;
+  color: black;
+}
+
+/* ====== DISPLAY USER STATS ====== */
+.user-stats-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#display-win-rate, #display-win-defeat, #display-total-games {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#display-wins, #display-defeats {
+  background-color: lightgray;
+}
+
+#display-any-stats-user-name {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+#display-any-user-win-rate, #display-any-user-total-games {
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+#display-any-user-wins {
+  color: green;
+}
+
+#display-any-user-defeats {
+  color: red;
+}
+
+.season-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0 15px 0;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* ====== Table ====== */
+#tablearea {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+#table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+#table tr:nth-child(even) {
+  background-color: white;
+}
+
+#table tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+#table tr:first-child {
+  background-color: #FAE10A;
+}
+
+#table tr th {
+  cursor: pointer;
+}
+
+#table th, td {
+  text-align: left;
+  padding: 10px 5px;
+  overflow: hidden;
+  min-width: 20px;
+  max-width: 50px;
+}
+/*# sourceMappingURL=styles.css.map */
